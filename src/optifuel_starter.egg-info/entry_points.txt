@@ -1,0 +1,2 @@
+[console_scripts]
+optifuel = optifuel.cli:main

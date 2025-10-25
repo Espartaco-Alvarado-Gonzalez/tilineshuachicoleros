@@ -1,0 +1,22 @@
+Metadata-Version: 2.4
+Name: optifuel-starter
+Version: 0.1.0
+Summary: Excel de métricas y recocido simulado para reabasto en estaciones de combustible.
+Author: OptiFuel Team
+License: MIT
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: pandas>=2.0
+Requires-Dist: numpy>=1.24
+Requires-Dist: xlsxwriter>=3.1
+Requires-Dist: click>=8.1
+
+# OptiFuel Starter
+
+Genera un Excel con métricas (litros/día, días para agotar, gasto diario min/máx, r(L), pedido recomendado)
+y ajusta parámetros globales por recocido simulado (SA).
+
+USO:
+    python -m venv .venv && source .venv/bin/activate
+    pip install -e .
+    optifuel run --out reporte.xlsx

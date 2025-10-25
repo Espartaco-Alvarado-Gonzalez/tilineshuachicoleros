@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "optifuel-starter"
+version = "0.1.0"
+description = "Excel de métricas y recocido simulado para reabasto en estaciones de combustible."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name="OptiFuel Team" }]
+dependencies = [
+    "pandas>=2.0",
+    "numpy>=1.24",
+    "xlsxwriter>=3.1",
+    "click>=8.1",
+]
+
+[project.scripts]
+optifuel = "optifuel.cli:main"
